@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplayBold';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplaySemiBold';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplayLight';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Light.otf');
+}
+
+* {
+  cursor: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all 0.3s ease-in-out;
+  background: rgb(168, 168, 168);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #929292;
+}
+
+.garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glass-morphism {
+  background: rgba(249, 249, 249, 0.74);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+}
+
+.landingPageLoader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+}
+.landingPageLoader:after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% { transform: translate(-50%, -50%) scale(0) }
+  60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+}
+@keyframes pulse {
+  0% , 60% , 100%{ transform:  scale(1) }
+  80% { transform:  scale(1.2)}
+}
+
+/* carousal moving text animation */
+
+.text-animation-move_ltr-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.text-animation-move_ltr-wrapper > h1 {
+  white-space: nowrap;
+  animation: moveLTR 3000ms linear infinite;
+  padding: 0 4px;
+}
+
+@keyframes moveLTR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
