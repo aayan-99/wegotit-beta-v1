@@ -23,7 +23,9 @@ function App() {
         <Route path="/typeface" element={<TypefacePage />} />
         <Route path="/gooddesign" element={<GoodDesignPage />} />
       </Routes>
+      <div className="hidden lg:block">
       <CustomCursor />
+      </div>
     </>
   )
 }
