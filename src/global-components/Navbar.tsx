@@ -1,5 +1,5 @@
 import logo from '../assets/icons/home.svg'
-import logoWhite from '../assets/icons/home-white.svg'
+// import logoWhite from '../assets/icons/home-white.svg'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
