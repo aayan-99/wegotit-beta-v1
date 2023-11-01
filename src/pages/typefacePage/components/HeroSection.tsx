@@ -18,7 +18,7 @@ const HeroSection = () => {
     ];
 
     return (
-        <div className="w-full bg-[#181818] pb-[100px]">
+        <div className="w-full bg-black pb-[100px]">
             <h1 className={`text-center text-white text-[35px] md:text-[60px] pt-[120px] pb-[90px]`}><span className="text-primary font-clashdisplaysemibold ">typograhy</span> <span className="font-300">x</span> <span className="text-primary font-clashdisplaysemibold ">fonts</span></h1>
             <div className="w-full lg:w-[80%] mx-auto">
                 <div className="w-full flex flex-col lg:flex-row gap-20 px-10">

@@ -154,16 +154,16 @@ const ColorPsychologyPage = () => {
     ];
 
     return (
-        <div className='w-full pb-[100px]'>
+        <div className='w-full pb-[200px] pt-10'>
             <PageHeader title="colors and it's brilliance" text_color="black" />
-            <div className="w-full md:w-[70%] xl:w-[80%] mx-auto grid grid-cols-2 xl:grid-cols-5">
+            <div className="w-full md:w-[70%] xl:w-[75%] mx-auto grid grid-cols-2 xl:grid-cols-5">
                 {
                     color_data?.map((color) => (
-                        <div key={color?.color_id} style={{ backgroundColor: color?.color_code }} className={`w-full p-4 flex flex-col ${color?.color === 'white' ? 'border-r border-b' : ''}`}>
-                            <h1 className={`text-[45px] font-clashdisplaybold font-[700] mb-3 text-${color?.color === 'yellow' || color?.color === 'green' || color?.color === 'white' ? 'black' : 'white'}`}>{color?.color}</h1>
+                        <div key={color?.color_id} style={{ backgroundColor: color?.color_code }} className={`w-full h-[230px] p-4 flex flex-col ${color?.color === 'white' ? 'border-r border-b' : ''}`}>
+                            <h1 className={`text-[45px] font-clashdisplaybold font-[700] mb-2 leading-none text-${color?.color === 'yellow' || color?.color === 'green' || color?.color === 'white' ? 'black' : 'white'}`}>{color?.color}</h1>
                             {
                                 color?.emotions?.map((emotion, i) => (
-                                    <p key={i} className={`text-[15px] font-clashdisplay text-${color?.color === 'yellow' || color?.color === 'green' || color?.color === 'white' ? 'black' : 'white'}`}>{emotion}</p>
+                                    <p key={i} className={`text-[15px] font-clashdisplay leading-none text-${color?.color === 'yellow' || color?.color === 'green' || color?.color === 'white' ? 'black' : 'white'}`}>{emotion}</p>
                                 ))
                             }
                         </div>

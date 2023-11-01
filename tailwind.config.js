@@ -17,6 +17,7 @@ export default {
       primary: '#FDBB11',
       secondary: '#231F20',
       white: '#fff',
+      black: '#231F20',
     },
   },
   plugins: [],

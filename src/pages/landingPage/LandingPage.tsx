@@ -5,11 +5,13 @@ import TypeFacePage from './components/TypeFacePage'
 import ColorPsychologyPage from './components/ColorPsychologyPage'
 import ContactPage from './components/ContactPage'
 import logo from '../../assets/images/logo_main.svg'
-import { useEffect, useState } from 'react'
+import { useRecoilState } from 'recoil'
+import { useEffect } from 'react'
+import websiteLoaderAtom from '../../recoil/atoms/websiteLoaderAtom'
 
 const LandingPage = () => {
 
-    const [landingPageLoading, setLandingPageLoading] = useState(true);
+    const [landingPageLoading, setLandingPageLoading] = useRecoilState(websiteLoaderAtom);
 
     useEffect(() => {
         setTimeout(() => {
