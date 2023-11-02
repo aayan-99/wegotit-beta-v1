@@ -30,7 +30,7 @@ const Expertise = () => {
                                 {
                                     data?.options?.map((sub_data) => (
                                         <div className='w-full flex justify-center items-center mb-6' key={sub_data?.id}>
-                                            <h1 className='font-clashdisplaylight text-[25px] text-white opacity-60 leading-none'>{sub_data?.title}</h1>
+                                            <h1 className='font-clashdisplaylight text-[25px] hover:text-primary hover:opacity-100 text-white opacity-60 leading-none'>{sub_data?.title}</h1>
                                         </div>
                                     ))
                                 }

@@ -9,9 +9,13 @@ const ContactPage = () => {
 
     const handleScrollToTopClick = () => {
         window.scrollTo({
-            top: 0, // Scroll to the top
-            behavior: 'smooth', // Smooth scrolling animation
+            top: 0,
+            behavior: 'smooth',
         });
+    };
+
+    const handleLinkButtonClick = () => {
+        window.open('https://www.behance.net/pallavsinha', '_blank');
     };
 
 
@@ -19,7 +23,7 @@ const ContactPage = () => {
         <div className='w-full flex flex-col relative'>
             <div className='w-full h-[47vh] md:h-[50vh] bg-black flex flex-col justify-center gap-8 items-center'>
                 <h1 className='font-clashdisplaysemibold text-[40px] md:text-[60px] lg:text-[80px] text-white leading-none'>portfolio!</h1>
-                <div className='w-[200px] cursor-pointer'>
+                <div className='w-[200px] cursor-pointer' onClick={handleLinkButtonClick}>
                     <img src={logo} className='w-full' alt="" />
                 </div>
             </div>

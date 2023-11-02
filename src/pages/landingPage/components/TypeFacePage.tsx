@@ -19,7 +19,7 @@ const TypeFacePage = () => {
           </div>
         </div>
         <div className="w-full lg:w-[50%] gap-2 md:gap-5 p-8 md:p-14 md:pb-16 md:px-20 border-2 border-white rounded-[25px] flex flex-col justify-start">
-          <h1 className="text-[45px] text-white pb-5 leading-none font-[300]"><span className="text-primary">two many</span> fonts</h1>
+          <h1 className="text-[45px] text-white pb-5 leading-none font-[300]"><span className="text-primary">too many</span> fonts</h1>
           <div>
             <h1 className="text-white font-[700] text-[26px] font-clashdisplaybold">Subheading</h1>
             <p className="text-white font-[400] text-[17px] garamond opacity-90">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde in nulla sapiente aliquam non dolorum deleniti quia quas corporis rem?</p>
