@@ -19,8 +19,8 @@ const FontSection = () => {
 
     return (
         <div className="w-full bg-black pb-[100px]">
-            <h1 className={`text-center text-white text-[35px] md:text-[60px] pt-[120px] pb-[90px]`}><span className="text-primary font-clashdisplaysemibold ">typograhy</span> <span className="font-300">x</span> <span className="text-primary font-clashdisplaysemibold ">fonts</span></h1>
-            <div className="w-[85%] md:w-[80%] xl:w-[60%] mx-auto my-10 flex lg:flex-row flex-col gap-6">
+            <h1 className={`text-center text-white text-[35px] md:text-[60px] pt-[120px] pb-[90px]`}><span className="text-primary font-clashdisplaysemibold ">typography</span> <span className="font-300">x</span> <span className="text-primary font-clashdisplaysemibold ">fonts</span></h1>
+            <div className="w-[85%] md:w-[80%] xl:w-[60%] mx-auto mt-10 mb-7 flex lg:flex-row flex-col gap-6">
                 <div className="w-full lg:w-[50%] gap-2 md:gap-5 p-8 md:p-14 md:pb-16 md:px-20 border-2 border-white rounded-[25px] flex flex-col justify-start">
                     <h1 className="text-[45px] text-white pb-5 leading-none font-[300]"><span className="text-primary">two</span> fonts</h1>
                     <div>
@@ -44,7 +44,7 @@ const FontSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full mx-auto pt-14">
+            <div className="w-full mx-auto">
                 <div className="w-[85%] md:w-[80%] xl:w-[65%] mx-auto flex flex-col lg:flex-row gap-6 px-10">
                     <div className="w-full lg:w-[50%] gap-2 md:gap-5 p-8 md:p-14 md:px-20 border-2 border-white rounded-[25px] flex flex-col justify-start">
                         <h1 className="text-[45px] text-white font-[300] font-clashdisplay tracking-[-0.5px]">I want your eye here</h1>
@@ -62,9 +62,9 @@ const FontSection = () => {
                     </div>
                 </div>
                 <div className="w-[85%] mx-auto flex flex-col text-white mt-24 px-10">
-                    <p className="text-[28px]">Typography</p>
+                    <p className="text-[28px] text-primary hover:text-white">Typography</p>
                     <p className="text-[14px]">is the art and technique of arranging type to make written language legible, readable, and visually appealing. It involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), as well as adjusting the space between pairs of letters (kerning).</p>
-                    <p className="text-[14px]">Typography plays a crucial role in <span className="text-[28px]">design</span>,</p>
+                    <p className="text-[14px]">Typography plays a crucial role in <span className="text-[28px] text-primary hover:text-white">design</span>,</p>
                     <p className="text-[14px]">influencing how users perceive and interact with written content.</p>
                 </div>
                 <div className="w-[85%] mx-auto h-0.5 bg-white bg-opacity-30 my-20"></div>
