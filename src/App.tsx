@@ -2,12 +2,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css'
 import { Route, Routes } from "react-router";
-import TypefacePage from "./pages/typefacePage/TypefacePage";
 import LandingPage from "./pages/landingPage/LandingPage";
 import Navbar from "./global-components/Navbar";
 import GoodDesignPage from "./pages/goodDesignPage/GoodDesignPage";
 import 'react-creative-cursor/dist/styles.css';
-import CustomCursor from "./global-components/custom-cursor/CustomCursor";
+import AnimatedCursor from "react-animated-cursor";
 
 
 
@@ -20,11 +19,16 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/typeface" element={<TypefacePage />} />
         <Route path="/gooddesign" element={<GoodDesignPage />} />
       </Routes>
       <div className="hidden lg:block">
-      <CustomCursor />
+        <AnimatedCursor
+          innerSize={14}
+          outerSize={30}
+          outerScale={2}
+          trailingSpeed={7}
+          color='253, 187, 17'
+        />
       </div>
     </>
   )

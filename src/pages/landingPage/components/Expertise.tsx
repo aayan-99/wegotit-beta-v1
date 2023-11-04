@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { expertise } from '../../../mockapi/expertise';
+import { Link } from 'react-router-dom';
 // import PrimaryButton from '../../../global-components/PrimaryButton';
 
 const Expertise = () => {
@@ -30,7 +31,7 @@ const Expertise = () => {
                                 {
                                     data?.options?.map((sub_data) => (
                                         <div className='w-full flex justify-center items-center mb-6' key={sub_data?.id}>
-                                            <h1 className='font-clashdisplaylight text-[25px] hover:text-primary hover:opacity-100 text-white opacity-60 leading-none'>{sub_data?.title}</h1>
+                                            <Link to={``} className='font-clashdisplaylight text-[25px] hover:text-primary hover:opacity-100 text-white opacity-60 leading-none'>+ {sub_data?.title} +</Link>
                                         </div>
                                     ))
                                 }

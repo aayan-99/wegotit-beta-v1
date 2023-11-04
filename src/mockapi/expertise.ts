@@ -20,5 +20,15 @@ export const expertise = {
                 { id: 3, title: 'UI design' },
             ],
         },
+        {
+            title: 'web applications',
+            id: 2,
+            options: [
+                { id: 0, title: 'ReactJs/NextJs' },
+                { id: 1, title: 'Typescript' },
+                { id: 2, title: 'Tailwind' },
+                { id: 3, title: 'MobX' },
+            ],
+        },
     ],
 };

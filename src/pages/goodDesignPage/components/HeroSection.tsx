@@ -31,7 +31,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full bg-[#E30000] flex justify-center items-center  my-[120px]'>
+            <div className='w-full bg-[#E30000] flex justify-center items-center  mt-[120px]'>
                 <div className='w-fit text-center leading-none text-white py-[120px] tracking-[-1px]'>
                     <h1 className='text-[38px] font-clashdisplaylight'>Products having a <span className='text-[58px] font-clashdisplay'>bad design</span></h1>
                     <h1 className='text-[38px] font-clashdisplaylight'> will impact the user experience <span className='text-[58px] font-clashdisplay'>negatively</span></h1>

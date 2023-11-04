@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import PageHeader from "../../../global-components/PageHeader"
+import up from '../../../assets/icons/up.svg'
 
 const ColorPsychologyPage = () => {
 
@@ -153,8 +155,15 @@ const ColorPsychologyPage = () => {
         }
     ];
 
+    const handleScrollToTopClick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
-        <div className='w-full pb-[200px] pt-10'>
+        <div className='w-full pb-[200px] pt-10 relative'>
             <PageHeader title="colors and it's brilliance" text_color="black" />
             <div className="w-full md:w-[70%] xl:w-[75%] mx-auto grid grid-cols-2 xl:grid-cols-5">
                 {
@@ -170,6 +179,11 @@ const ColorPsychologyPage = () => {
                     ))
                 }
             </div>
+            <Link to={``} className='absolute bottom-0 right-0 flex justify-end items-center px-10 pb-8'>
+                <div onClick={handleScrollToTopClick} className='w-full max-w-[65px]'>
+                    <img src={up} className='w-full' alt="" />
+                </div>
+            </Link>
         </div>
     )
 }

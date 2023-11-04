@@ -1,13 +1,12 @@
 import HeroSection from './components/HeroSection'
 import Expertise from './components/Expertise'
 import GoodDesign from './components/GoodDesign'
-import TypeFacePage from './components/TypeFacePage'
-import ColorPsychologyPage from './components/ColorPsychologyPage'
 import ContactPage from './components/ContactPage'
 import logo from '../../assets/images/logo_main.svg'
 import { useRecoilState } from 'recoil'
 import { useEffect } from 'react'
 import websiteLoaderAtom from '../../recoil/atoms/websiteLoaderAtom'
+import { motion } from 'framer-motion'
 
 const LandingPage = () => {
 
@@ -23,19 +22,21 @@ const LandingPage = () => {
         <>
             {
                 landingPageLoading ? (
-                    <div className='h-screen bg-primary flex flex-col justify-center items-center'>
+                    <motion.div
+                        initial={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.5 }}
+                        className='h-screen bg-primary flex flex-col justify-center items-center'>
                         <div className='w-full max-w-[200px] mb-[200px]'>
                             <img src={logo} className='w-full' alt="" />
                         </div>
                         <span className='landingPageLoader'></span>
-                    </div>
+                    </motion.div>
                 ) : (
                     <>
                         <HeroSection />
                         <Expertise />
                         <GoodDesign />
-                        <TypeFacePage />
-                        <ColorPsychologyPage />
                         <ContactPage />
                     </>
                 )

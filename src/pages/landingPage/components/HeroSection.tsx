@@ -15,7 +15,7 @@ const HeroSection = () => {
         window.scrollTo({
             top: window.scrollY + (window.innerHeight * 0.3), // Scroll down by 50vh
             behavior: 'smooth', // Smooth scrolling animation
-          });
+        });
     };
 
     return (
@@ -25,13 +25,13 @@ const HeroSection = () => {
                     <img src={image} className='w-full' alt="" />
                 </div>
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 2 }}
                     className='w-[50%] flex justify-center items-center'>
                     <div className='w-fit text-black text-center'>
-                        <p className='text-[40px] leading-none font-clashdisplaylight tracking-[-1px]'>crafting</p>
-                        <h1 className='text-[52px] leading-none font-clashdisplaybold tracking-[-1px]'>brillance</h1>
+                        <p className='text-[45px] leading-none font-clashdisplaylight tracking-[-1px]'>crafting</p>
+                        <h1 className='text-[58px] leading-none font-clashdisplaybold tracking-[-1px]'>brillance</h1>
                     </div>
                 </motion.div>
             </div>
