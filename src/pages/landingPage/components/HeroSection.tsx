@@ -13,14 +13,14 @@ const HeroSection = () => {
 
     const handleScrollClickMobile = () => {
         window.scrollTo({
-            top: window.scrollY + (window.innerHeight * 0.3), // Scroll down by 50vh
+            top: window.scrollY + (window.innerHeight * 0.65), // Scroll down by 50vh
             behavior: 'smooth', // Smooth scrolling animation
         });
     };
 
     return (
         <div className='relative w-full flex justify-center items-center max-h-screen overflow-hidden'>
-            <div className='w-full flex justify-center items-center'>
+            <div className='w-full hidden sm:flex justify-center items-center'>
                 <div className='w-[50%]'>
                     <img src={image} className='w-full' alt="" />
                 </div>
@@ -34,6 +34,11 @@ const HeroSection = () => {
                         <h1 className='text-[58px] leading-none font-clashdisplaybold tracking-[-1px]'>brillance</h1>
                     </div>
                 </motion.div>
+            </div>
+            <div className='flex sm:hidden w-full bg-primary mt-[64px]'>
+                <div className='w-full'>
+                    <img src={image} className='w-full' alt="" />
+                </div>
             </div>
             <div className='hidden md:flex absolute bottom-3 justify-center items-center w-full'>
                 <div onClick={handleScrollClick} className='w-full max-w-[25px] mt-20 animate-bounce cursor-pointer'>

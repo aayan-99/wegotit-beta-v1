@@ -25,13 +25,13 @@ const Expertise = () => {
                 {/* dropdowns */}
                 {
                     expertise.content.map((data) => (
-                        <div className='w-full flex flex-col items-center mb-[50px]' key={data?.id}>
-                            <h1 className='font-clashdisplaylight text-[44px] active:scale-95 transition-all duration-300 ease-out text-white leading-none cursor-pointer' onClick={() => dropdownToggle(data?.title)}>{activeExpertise !== data?.title ? <span>+</span> : <span>-</span>} {data?.title} {activeExpertise !== data?.title ? <span>+</span> : <span>-</span>}</h1>
-                            <div className={`mt-5 w-[80%] ${activeExpertise == data?.title ? 'max-h-[300px]' : 'max-h-0'} transition-all duration-300 ease-in-out overflow-hidden`}>
+                        <div className='w-full flex flex-col items-center mb-[60px]' key={data?.id}>
+                            <h1 className='font-clashdisplaylight text-[30px] lg:text-[44px] active:scale-95 transition-all duration-300 ease-out text-white leading-none cursor-pointer' onClick={() => dropdownToggle(data?.title)}>{activeExpertise !== data?.title ? <span>+</span> : <span>-</span>} {data?.title} {activeExpertise !== data?.title ? <span>+</span> : <span>-</span>}</h1>
+                            <div className={`w-[80%] ${activeExpertise == data?.title ? 'pt-10 max-h-[300px]' : 'max-h-0 opacity-30'} flex flex-col md:flex-row justify-center transition-all duration-500 ease-in-out overflow-hidden`}>
                                 {
                                     data?.options?.map((sub_data) => (
                                         <div className='w-full flex justify-center items-center mb-6' key={sub_data?.id}>
-                                            <Link to={``} className='font-clashdisplaylight text-[25px] hover:text-primary hover:opacity-100 text-white opacity-60 leading-none'>+ {sub_data?.title} +</Link>
+                                            <Link to={``} className='font-clashdisplaylight text-[20px] lg:text-[28px] hover:text-primary hover:opacity-100 text-white opacity-60 text-center leading-none'>{sub_data?.title}</Link>
                                         </div>
                                     ))
                                 }

@@ -10,5 +10,5 @@ export const design = {
         {id: 5, title: 'makes sense'},
         {id: 6, title: 'creates recall'},
     ],
-    button_text: "let's see some examples",
+    button_text: "watch this space",
 };

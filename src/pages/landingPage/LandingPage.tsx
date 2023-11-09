@@ -7,6 +7,7 @@ import { useRecoilState } from 'recoil'
 import { useEffect } from 'react'
 import websiteLoaderAtom from '../../recoil/atoms/websiteLoaderAtom'
 import { motion } from 'framer-motion'
+import Clientele from './components/Clientele'
 
 const LandingPage = () => {
 
@@ -37,6 +38,7 @@ const LandingPage = () => {
                         <HeroSection />
                         <Expertise />
                         <GoodDesign />
+                        <Clientele />
                         <ContactPage />
                     </>
                 )
