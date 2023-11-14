@@ -35,7 +35,7 @@ const HeroSection = () => {
                     </div>
                 </motion.div>
             </div>
-            <div className='flex sm:hidden w-full bg-primary mt-[64px]'>
+            <div className='flex sm:hidden w-full bg-primary'>
                 <div className='w-full'>
                     <img src={image} className='w-full' alt="" />
                 </div>

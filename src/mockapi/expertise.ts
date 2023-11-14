@@ -5,9 +5,10 @@ export const expertise = {
             title: 'brand identity',
             id: 0,
             options: [
-                { id: 0, title: 'logo design + case study' },
-                { id: 1, title: 'business cards + newsletters' },
-                { id: 2, title: 'brand guidelines' },
+                { id: 0, title: 'logo design' },
+                { id: 1, title: 'case study' },
+                { id: 2, title: 'business cards + newsletters' },
+                { id: 3, title: 'brand guidelines' },
             ],
         },
         {
@@ -24,10 +25,10 @@ export const expertise = {
             title: 'web applications',
             id: 2,
             options: [
-                { id: 0, title: 'E-commerce' },
-                { id: 1, title: 'Admin Dashboard' },
-                { id: 2, title: 'Social Media Platform' },
-                { id: 3, title: 'HRMS' },
+                { id: 0, title: 'e-commerce' },
+                { id: 1, title: 'admin dashboard' },
+                { id: 2, title: 'social media platform' },
+                { id: 3, title: 'hrms' },
             ],
         },
     ],
