@@ -20,9 +20,10 @@ function App() {
   const [mobileNavbarToggle, setMobileNavbarToogle] = useRecoilState(mobileNavbarToggleAtom);
 
   const [landingPageLoading, _setLandingPageLoading] = useRecoilState(websiteLoaderAtom);
+
   return (
     <>
-      <div className="w-full relative">
+      <div className={`w-full relative ${landingPageLoading ? 'hidden' : ''}`}>
         <Navbar />
       </div>
       <div className={`md:hidden fixed w-[50px] flex justify-center items-center top-3 rounded-full bg-primary right-3 z-[120] ${landingPageLoading ? 'hidden' : ''}`} onClick={() => setMobileNavbarToogle(!mobileNavbarToggle)}>

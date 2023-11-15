@@ -4,8 +4,8 @@ import lockBlack from '../../../assets/icons/wegotit-icons-lock(black)-03.svg'
 
 const GoodDesign = () => {
     return (
-        <div className='w-full pb-[80px] md:pb-[200px] bg-primary'>
-            <h1 className='font-clashdisplay pt-[50px] md:pt-[160px] pb-[10px] text-center text-[65px] text-black tracking-[-2px] leading-none'>a good <span className="font-clashdisplaysemibold">design</span>?</h1>
+        <div className='w-full py-[150px] bg-primary sm:px-14'>
+            <h1 className='font-clashdisplaylight pb-[30px] sm:pb-[10px] text-center text-[45px] md:text-[65px] text-black tracking-[-2px] leading-none'>a good <span className="font-clashdisplaysemibold">design</span>?</h1>
             <div className='w-full flex flex-col justify-center items-center'>
                 <h1 className='font-clashdisplaylight text-[50px] md:text-[80px] text-center tracking-[-2px] leading-none mb-12'>an <span>impeccable</span> <span className="font-clashdisplaysemibold text-[80px] md:text-[130px]">solution</span></h1>
                 <Link to={`/`} className="relative flex flex-col justify-center items-center gap-2">
